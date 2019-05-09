@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package pb;
+
+
+service Waiter {
+    rpc ExecCmd(Cmd) returns (Rsp){}
+}
+
+message Cmd {
+    int32 type = 1;
+    string param = 2;
+}
+
+message Rsp {
+    string r =1;
+}
