@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-	"hci.macrosan.com/hci/hci_golang/pb"
+	"grpc/pb"
 	"net"
 )
 
