@@ -6,15 +6,17 @@
   
 2、golang准备
 
-  // gRPC运行时接口编解码支持库
+  gRPC运行时接口编解码支持库
   
   go get -u github.com/golang/protobuf/proto
   
-  // 从 Proto文件(gRPC接口描述文件) 生成 go文件 的编译器插件
+  从 Proto文件(gRPC接口描述文件) 生成 go文件 的编译器插件
   
   go get -u github.com/golang/protobuf/protoc-gen-go
   
-  在protoc的bin里面go build github.com/golang/protobuf/proto
+  在protoc的bin里面
+  
+  go build github.com/golang/protobuf/proto
   
  3、python准备
  
