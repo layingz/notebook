@@ -259,9 +259,17 @@ re.sub还允许使用函数对匹配项的替换进行复杂的处理。
 
 subn(pattern, repl, string, count=0, flags=0)
 
-print(re.subn('[1-2]','A','123456abcdef'))                  ('AA3456abcdef', 2)
-print(re.sub("g.t","have",'I get A,  I got B ,I gut C'))    I have A,  I have B ,I have C
-print(re.subn("g.t","have",'I get A,  I got B ,I gut C'))   ('I have A,  I have B ,I have C', 3)
+print(re.subn('[1-2]','A','123456abcdef'))                 
+
+('AA3456abcdef', 2)
+
+print(re.sub("g.t","have",'I get A,  I got B ,I gut C'))    
+
+I have A,  I have B ,I have C
+
+print(re.subn("g.t","have",'I get A,  I got B ,I gut C')) 
+
+('I have A,  I have B ,I have C', 3)
 
 四、注意事项
 
@@ -269,19 +277,19 @@ print(re.subn("g.t","have",'I get A,  I got B ,I gut C'))   ('I have A,  I have 
 
 re.match只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回None；而re.search匹配整个字符串，直到找到一个匹配。
 
-a=re.search('[\d]',"abc33").group()   3
+a=re.search('[\d]',"abc33").group() 	3
 
-p=re.match('[\d]',"abc33")    None
+p=re.match('[\d]',"abc33") 	None
 
-b=re.findall('[\d]',"abc33")    ['3', '3']
+b=re.findall('[\d]',"abc33") 	['3', '3']
 
 2、贪婪匹配与非贪婪匹配
 
 *?,+?,??,{m,n}?    前面的*,+,?等都是贪婪匹配，也就是尽可能匹配，后面加?号使其变成惰性匹配
 
-re.findall(r"a(\d+?)",'a23b')   ['2']
+re.findall(r"a(\d+?)",'a23b')		['2']
 
-re.findall(r"a(\d+)",'a23b')    ['23']
+re.findall(r"a(\d+)",'a23b')		['23']
 
  3、用flags时遇到的小坑
 
