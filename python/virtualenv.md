@@ -1,8 +1,8 @@
-1、通过pip安装virtualenv：
+**1、通过pip安装virtualenv:**
   
     pip install virtualenv
  
-2、virtualenv命令解析：
+**2、virtualenv命令解析：**
   
     --system-site-packages  链接到系统的包
 
@@ -16,7 +16,7 @@
 
     --download  从pypi提前下载第三方包
   
- 3、简单使用：
+**3、简单使用：**
   
     创建虚拟环境-p是对应python的bin目录
     
@@ -34,7 +34,7 @@
   
     pip install -r requirements.txt
     
- 4、关于virtualenvwrapper
+**4、关于virtualenvwrapper**
   
     只是简单对virtualenv进行简单封装，并没有很大用途，也需要激活配置文件， 使用上没更简单，反而多了一层，其作用主要体现在以下几个命令：
     
