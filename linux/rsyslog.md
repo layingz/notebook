@@ -44,7 +44,7 @@ rsysylog处理流程
     GLOBAL DIRECTIVES
     这个部分主要用来配置模板，模板的作用是指定你希望在日志文件中保存的日志格式
     RULES
-    规则
+    规则（选择器+动作），每个规则行由两部分组成，selector部分和action部分，这两部分由一个或多个空格或tab分隔，selector部分指定源和日志等级，action部分指定对应的操作
 
 [MODULES]
 
@@ -63,7 +63,3 @@ rsysylog处理流程
     action(type="omfile" dynaFile="ThisIsTemplateName" fileOwner="develop" fileCreateMode="0655" template="nginx_b" )
     stop
     }
-
-
-
-
