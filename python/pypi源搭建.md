@@ -43,6 +43,13 @@
         extra-index-url = http://localhost:9090
     or
     pip install  --extra-index-url = http://localhost:9090
+
+6、pip使用
+
+    1、导出当前环境的pip安装包：
+    pip freeze > requirements.txt
+    2、新环境一键导入pip包：
+    pip install -r requirement.txt
     
 
 

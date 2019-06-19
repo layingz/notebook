@@ -15,11 +15,10 @@ const (
 
 type server struct{}
 
-func (s *server) ExecCmd(ctx context.Context, cmd *pb.Cmd) (*pb.Rsp, error){
+func (s *server) ExecCmd(ctx context.Context, cmd *pb.Cmd) (*pb.Rsp, error) {
 	fmt.Printf("type:%d, param:%s\n", cmd.Type, cmd.Param)
-	return &pb.Rsp{R:"ok"}, nil
+	return &pb.Rsp{R: "ok"}, nil
 }
-
 
 func main() {
 	l, err := net.Listen("tcp", port)

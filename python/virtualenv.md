@@ -38,7 +38,15 @@
   
     只是简单对virtualenv进行简单封装，并没有很大用途，也需要激活配置文件， 使用上没更简单，反而多了一层，其作用主要体现在以下几个命令：
     
-    lsvirtualenv    #列举所有的环境。
+    mkvirtualenv [虚拟环境名称] #创建虚拟环境
+
+    lsvirtualenv    #列举所有的环境
+
+    cpvirtualenv [source] [dest] #复制虚拟环境
+
+    rmvirtualenv [虚拟环境名称] #删除虚拟环境
+
+    workon [虚拟环境名称] #切换虚拟环境
 
     cdvirtualenv    #导航到当前激活的虚拟环境的目录中，比如说这样您就能够浏览它的 site-packages。
 
